@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>квартирка</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/img/icon.png" alt="" width="45" height=30>
+                        <a class ="navbar-brand-txt underline-one" href="#">квартирка.ру</a>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <li class="nav-item">
+                                <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Войти
+                                    </button>
+
+                                <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Вход в личный кабинет</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                                                        </div>
+                                                        <form action="index1.html" target="_blank">
+                                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+                                                        </form>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    Зарегистрироваться
+                                </button>
+                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel1">Регистрация</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail12" aria-describedby="emailHelp">
+                                                        <div id="emailHelp1" class="form-text">We'll never share your email with anyone else.</div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword12">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputPassword1" class="form-label">Повторите пароль</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword123">
+                                                    </div>
+                                                    <form action="index1.html" target="_blank">
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Создать аккаунт</button>
+                                                    </form>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Фильтры
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item " href="#">Дом</a></li>
+                                        <li><a class="dropdown-item" href="#">Квартира</a></li>
+                                        <li><a class="dropdown-item" href="#">Постуточно</a></li>
+                                        <li><a class="dropdown-item" href="#">Покупка</a></li>
+                                        <li><a class="dropdown-item" href="#">Аренда</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Поиск кваритиры" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+
+        </section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm pad">
+                <div class="card obj" id="card1" style="width: 18rem;">
+                    <img src="/img/img2.jpg" class="card-img-top" alt="" width="100px">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj" id="card2" style="width: 18rem;">
+                    <img src="/img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj" id="card3" style="width: 18rem;">
+                    <img src="/img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj " id="card7" style="width: 18rem;" >
+                    <img src="/img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm pad">
+                <div class="card obj" id="card4" style="width: 18rem;">
+                    <img src="/img/img2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl modal-fullscreen-xl-down">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Название объявления</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="/img/img1.jpg" class="rounded mx-auto d-block" alt="..." >
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="/img/img2.jpg" class="rounded mx-auto d-block" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="/img/img3.jpg " class="rounded mx-auto d-block" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Предыдущий</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Следующий</span>
+                                            </button>
+                                        </div>
+                                        <h2 class="display-6 tite"> О квартире </h2>
+                                            <dl class="row ">
+                                                <dt class="col-sm-3">Количество комнат:</dt>
+                                                <dd class="col-sm-9">3 комнаты.</dd>
+                                                <dt class="col-sm-3">Этаж:</dt>
+                                                <dd class="col-sm-9">
+                                                <p>2 из 10.</p>
+                                                </dd>
+                                                <dt class="col-sm-3">Бытовая техника:</dt>
+                                                <dd class="col-sm-9">холодильник, плита, микроволновка, стиральная машина, телевизор, фен, утюг.</dd>
+                                                <dt class="col-sm-3 text-truncate">Интернет и ТВ:</dt>
+                                                <dd class="col-sm-9"> Wi-Fi, телевидение.</dd>
+                                            </dl>
+                                        <h2 class="display-6 ">Описание</h2>
+                                        <p> Однокомнатная квартира со всеми удобствами!
+                                            B куxнe пpедоcтaвлены все принaдлежнoсти: в пеpвую oчepeдь для пpигoтoвлeниe eды и пpиёма пищи, чайник, микровoлновaя печь, плитa, xoлoдильник и вся нeобxoдимaя посуда
+                                            🎛🍵🍽🍴🍷🍸🍹🍺🥄🔪🥗🥣🍲🥘🍳</p>
+
+                                        <ul class="list">
+                                            <li>This is a list.</li>
+                                            <li>It appears completely unstyled.</li>
+                                            <li>Structurally, it's still a list.</li>
+                                            <li>However, this style only applies to immediate child elements.</li>
+                                            <li>Nested lists:
+                                                <ul>
+                                                    <li>are unaffected by this style</li>
+                                                    <li>will still show a bullet</li>
+                                                    <li>and have appropriate left margin</li>
+                                                </ul>
+                                            </li>
+                                            <li>This may still come in handy in some situations.</li>
+                                        </ul>
+                                            💥 БУДЕМ РАДЫ ВАС ЗАСЕЛИТЬ
+                                        <h2 class="display-6 tite">Расположение</h2>
+                                        <div style="position:relative;overflow:hidden;">
+                                            <a href="https://yandex.ru/maps/org/rtu_mirea/1026238431/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">РТУ МИРЭА</a>
+                                            <a href="https://yandex.ru/maps/213/moscow/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Учебный центр в Москве</a>
+                                            <a href="https://yandex.ru/maps/213/moscow/category/further_education/184106162/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Дополнительное образование в Москве</a>
+                                            <iframe src="https://yandex.ru/map-widget/v1/-/CCUJELRhLB" width="700" height="300" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                        </div>
+                                    </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                <form action="https://www.google.com/webhp?hl=ru&sa=X&ved=0ahUKEwjTrq2F6_P3AhXdisMKHXsCCo8QPAgI" target="_blank">
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Связаться</button>
+
+                                                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                                                        <div class="offcanvas-header">
+                                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="offcanvas-body">
+                                                            <h1 class="display-6">Контакты</h1>
+                                                            <dl class="row ">
+                                                                <dt class="col-sm-3 text-truncate">ФИО</dt>
+                                                                <dd class="col-sm-9">Матвеев Артём Андреевич</dd>
+                                                                <dt class="col-sm-3">Номер телефона:</dt>
+                                                                <dd class="col-sm-9">8-916-362-16-82.</dd>
+                                                                <dt class="col-sm-3">Почта:</dt>
+                                                                <dd class="col-sm-9">
+                                                                <a href="mailto:point.r-123@yandex.ru">point.r-123@yandex.ru</a>
+                                                                </dd>
+                                                                <dt class="col-sm-3">WhatsApp:</dt>
+                                                                <dd class="col-sm-9">есть</dd>
+                                                                <dt class="col-sm-3 text-truncate">Telegram:</dt>
+                                                                <dd class="col-sm-9">есть</dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj" id="card5" style="width: 18rem;">
+                    <img src="/img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj" id="card6" style="width: 18rem;">
+                    <img src="/img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm pad">
+                <div class="card obj" id="card9" style="width: 18rem;">
+                    <img src="/img/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Читать далее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="sc-footer">
+            <div class="container-fluid px-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="display-6">Информация</h1>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                    </div>
+                    <div class="col">
+                        <h1 class="display-6">Помощь</h1>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                    </div>
+                    <div class="col">
+                        <h1 class="display-6">О нас</h1>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                    </div>
+                    <div class="col">
+                        <h1 class="display-6">Другое</h1>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                        <p><em>Курсив.</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <h2><em>Наши соцсети:</em></h2>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="logo" src="/img/instagram.png"> </a>
+                        <a href="https://web.telegram.org/" target="_blank"><img class="logo" src="/img/telegram.png" > </a>
+                        <a href="https://vk.com/" target="_blank"><img class="logo" src="/img/vk.png"> </a>
+                        <a href="https://youtube.com/" target="_blank"><img class="logo" src="/img/youtube.png"> </a>
+                        <p>© 2021—2022 квартирка.ру — сделано в России. Посуточная аренда жилья с гарантией заселения.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

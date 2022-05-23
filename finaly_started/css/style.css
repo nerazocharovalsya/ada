@@ -1,0 +1,92 @@
+.obj
+{
+    padding: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+.pad
+{
+    padding-top: 25px;
+}
+.carousel-control-next-icon
+{
+    background-image: url(/img/next.png);
+}
+.tite
+{
+    padding-top: 20px;
+}
+.carousel-text
+{
+    color: white;
+}
+.image
+{
+    width: 200px;
+    height: 200px;
+}
+.btn-secondary
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.sc-footer
+{
+    color: #eeeeee;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(33,37,41) ;
+}
+.container-footer
+{
+    margin-top: 10px;
+}
+#tg
+{
+    background-image: url(/img/instagram.png);
+}
+
+section
+{
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+.logo
+{
+    width: 30px;
+    height: 30px;
+    margin: 5px ;
+}
+.navbar-brand-txt {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.navbar-brand-txt:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.navbar-brand-txt:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
